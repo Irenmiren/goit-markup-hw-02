@@ -4,7 +4,7 @@
 	--accent-color: #2196f3;
 	--hero-color: #ffffff;
 	--logo-color: #000000;
-	--contact-footer-color: rgba(255, 255, 255, 0.6);
+	--contact-footer-color: #ffffff;
 	--button-bg-color: #f5f4fa;
 	--hero-bg: #2f303a;
 	--portfolio-bg: #e5e5e5;
@@ -35,13 +35,11 @@ body {
 	line-height: 1.2;
 	letter-spacing: 0.03em;
 	word-spacing: -6px;
-}
-.logo .web {
 	color: var(--accent-color);
 }
 
-.logo .web:hover,
-.logo .web:focus {
+.logo:hover,
+.logo:focus {
 	color: var(--accent-color);
 }
 
@@ -109,12 +107,11 @@ body {
 }
 
 .hero .button.primary {
+	font-family: inherit;
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 1.88;
-	display: flex;
-	align-items: center;
-	text-align: center;
+
 	letter-spacing: 0.06em;
 }
 
@@ -237,6 +234,10 @@ body {
 .button.secondary {
 	color: var(--title-text-color);
 	background-color: var(--button-bg-color);
+}
+.button.current {
+	background-color: var(--accent-color);
+	color: var(--contact-footer-color);
 }
 
 .footer {
